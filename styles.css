@@ -27,6 +27,14 @@ body {
     padding-top: 10vh;
 }
 
+img.profile_logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid var(--primary-color-dark);
+}
+
 .content {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
