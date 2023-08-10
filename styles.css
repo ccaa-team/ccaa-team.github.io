@@ -66,19 +66,9 @@ body {
     gap: 20px;
 }
 
-.vertical-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 20px;
-    max-height: 60vh;
-    overflow-y: auto;
-}
-
 .regular-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
     gap: 10px;
     margin-top: 20px;
     max-height: 60vh;
@@ -86,10 +76,24 @@ body {
 }
 
 .member {
+    grid-row: span 1;
+}
+
+/* Adjust the layout for every third member */
+.member:nth-child(3n+1),
+.member:nth-child(3n+2),
+.member:nth-child(3n+3) {
+    grid-column: span 3;
+    grid-row: auto; /* Reset grid-row to auto for these items */
+}
+
+
+.member {
     background-color: rgba(20, 20, 20, 1);
     padding: 10px;
     border-radius: 10px;
 }
+
 .member * {
   margin-top: 5px;
 }
@@ -120,6 +124,7 @@ body {
 .comments {
   display: block;
   padding-right: 45%;
+  margin: 10px
 }
 
 .projects {
