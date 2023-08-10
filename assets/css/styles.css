@@ -5,11 +5,11 @@
 
 @font-face {
     font-family: vt323;
-    src: url(./resources/VT323-Regular.ttf);
+    src: url(/assets/fonts/VT323-Regular.ttf);
 }
 @font-face {
     font-family: firacode;
-    src: url(./resources/FiraCode-Bold.ttf);
+    src: url(/assets/fonts/FiraCode-Bold.ttf);
 }
 
 body {

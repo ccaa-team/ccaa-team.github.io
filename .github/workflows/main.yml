@@ -1,0 +1,24 @@
+name: GitHub Pages
+on:
+  push:
+    branches:
+    - main
+jobs:
+  build:
+    name: Build Documentation
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup python
+      run: |
+        python3 -m pip install django
+    - name: Run python scripts
+      run: |
+        python3 ./scripts/build_members.py
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        force_orphan: true
+        commit_message: Build for

@@ -1,0 +1,61 @@
+[
+  {
+    "name": "9551Dev",
+    "github": "9551-Dev",
+    "desc": "The one next to me is a fucking bottom",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/508577166405926913"},
+      {"icon":"horsie.png","url":"https://9551.madefor.cc/estrogen_extraction/"}
+    ]
+  },
+  {
+    "name": "Virtio",
+    "github": "viwty",
+    "desc": "The guy that made the member cards :tf:",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/852877128844050432"}
+    ]
+  },
+  {
+    "name": "Fatboychummy",
+    "github": "fatboychummy",
+    "desc": "\"triangles can be used to render shrek's gigantic 3D cartoon-style dick and balls and that's all I need to realize I love triangles\"",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/236628809158230018"}
+    ]
+  },
+  {
+    "name": "Jonmjauu",
+    "github": "jonmjauu",
+    "desc": "\"THATS CAPITALISTIC\"",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/495506911257427979"}
+    ]
+  },
+  {
+    "name": "SkyCrafter0",
+    "github": "SkyTheCodeMaster",
+    "desc": "A better Canadian than Fatboychummy",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/1020094205974040698"},
+      {"icon":"favicon-standard.png","url":"https://skystuff.cc/"}
+    ]
+  },
+  {
+    "name": "AlexDevs",
+    "github": "Ale32bit",
+    "desc": "\"Hand soap dispenser fucking came on my shirt\"",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/113673208296636420"}
+    ]
+  },
+  {
+    "name": "BlackDragon",
+    "github": "BlackDragon-B",
+    "desc": "\"I have the sudden urge to...\"",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/270210946201288714"},
+      {"icon":"favicon-standard.png","url":"https://blackdrgn.nl/"}
+    ]
+  }
+]
