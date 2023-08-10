@@ -77,16 +77,8 @@ body {
 
 .member {
     grid-row: span 1;
+    grid-column: span 1;
 }
-
-/* Adjust the layout for every third member */
-.member:nth-child(3n+1),
-.member:nth-child(3n+2),
-.member:nth-child(3n+3) {
-    grid-column: span 3;
-    grid-row: auto; /* Reset grid-row to auto for these items */
-}
-
 
 .member {
     background-color: rgba(20, 20, 20, 1);

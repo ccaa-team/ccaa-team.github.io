@@ -1,13 +1,38 @@
-const members = document.querySelectorAll('.member');
-const regularGrid = document.querySelector('.regular-grid');
+document.addEventListener('DOMContentLoaded', function() {
+    const members = Array.from(document.querySelectorAll('.member'));
+    const regularGrid = document.querySelector('.regular-grid');
 
-members.forEach((member, index) => {
-    const rowIndex = Math.floor(index / 3);
-    const colIndex = index % 3;
-    member.style.gridRow = `span 1`;
-    member.style.gridColumn = `span 1`;
-    member.style.gridRowStart = rowIndex + 1;
-    member.style.gridColumnStart = colIndex + 1;
+    function updateGridLayout() {
+        const containerWidth = regularGrid.clientWidth; // Use clientWidth here
+        const minMemberWidth = 300;
+        const gap = 10;
+
+        const membersPerRow = Math.max(1,Math.min(3, Math.floor((containerWidth + gap) / (minMemberWidth + gap))));
+
+        members.forEach((member, index) => {
+            const row = Math.floor(index / membersPerRow);
+            const col = index % membersPerRow;
+            member.style.gridRow = `${row + 1} / span 1`;
+            member.style.gridColumn = `${col + 1} / span 1`;
+        });
+    }
+
+    function waitForVisibility() {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    updateGridLayout();
+                    observer.disconnect();
+                }
+            });
+        });
+
+        observer.observe(regularGrid);
+    }
+
+    waitForVisibility();
+
+    window.addEventListener('resize', () => {
+        updateGridLayout();
+    });
 });
-
-regularGrid.style.gridAutoRows = 'auto';
