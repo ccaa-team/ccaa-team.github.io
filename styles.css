@@ -1,0 +1,142 @@
+:root {
+    --primary-color-light: #3498db;
+    --primary-color-dark: #2c3e50;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s;
+    overflow-y: auto;
+    max-height: 90vh;
+    padding-top: 10vh;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    display: none;
+}
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 20px 40px;
+    background-color: var(--primary-color-light);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.05);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.vertical-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.member {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+.member h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.member a {
+    display: block;
+    margin-top: 5px;
+    color: var(--primary-color-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.member a:hover {
+    color: var(--primary-color-dark);
+}
+.projects {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.projects p,.projects a {
+    margin-left: 15px;
+}
+.projects h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.project {
+    margin-top: 10px;
+}
+.project a {
+    color: var(--primary-color-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.project a:hover {
+    color: var(--primary-color-dark);
+}
+#matrix-rain {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.loading-text {
+    color: #00c400;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.glitch {
+    animation: glitch 0.1s infinite;
+}
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 1;
+   }
+    25%, 50%, 75% {
+        transform: translate(-2px, -2px);
+        opacity: 0.8;
+   }
+    20%, 40%, 60%, 80% {
+        transform: translate(2px, 2px);
+        opacity: 0.6;
+   }
+}
