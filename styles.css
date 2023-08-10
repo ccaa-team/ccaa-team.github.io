@@ -39,14 +39,6 @@ body {
     padding-top: 10vh;
 }
 
-img.profile_logo {
-    width: 30px !important;
-    height: 30px !important;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 2px solid var(--primary-color-dark);
-}
-
 .content {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
@@ -98,12 +90,14 @@ img.profile_logo {
     padding: 10px;
     border-radius: 10px;
 }
+.member * {
+  margin-top: 5px;
+}
 .member h3 {
     margin: 0;
     font-size: 1.2rem;
 }
 .member a {
-    display: block;
     margin-top: 5px;
     color: var(--primary-color-light);
     text-decoration: none;
@@ -111,6 +105,21 @@ img.profile_logo {
 }
 .member a:hover {
     color: var(--primary-color-dark);
+}
+.member p {
+  margin: 0px;
+}
+
+.pfp {
+  float: right;
+  width: 45%;
+}
+.contacts img {
+  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(107%) contrast(100%);
+}
+.comments {
+  display: block;
+  padding-right: 45%;
 }
 
 .projects {
