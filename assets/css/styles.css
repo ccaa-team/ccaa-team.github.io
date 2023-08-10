@@ -105,6 +105,7 @@ body {
 .pfp {
   float: right;
   width: 45%;
+  border-radius: 20px;
 }
 .contacts img {
   filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(107%) contrast(100%);
