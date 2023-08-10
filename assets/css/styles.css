@@ -80,7 +80,6 @@ body {
     background-color: rgba(20, 20, 20, 1);
     padding: 10px;
     border-radius: 10px;
-    minmax(200px, 1fr)
 }
 
 .member * {
