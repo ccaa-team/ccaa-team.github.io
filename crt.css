@@ -1,0 +1,83 @@
+@keyframes textShadow {
+    0% {
+        text-shadow: 0.218px 0 1px rgba(0, 30, 255, 0.5), -0.218px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    5% {
+        text-shadow: 1.396px 0 1px rgba(0, 30, 255, 0.5), -1.396px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    10% {
+        text-shadow: 0.015px 0 1px rgba(0, 30, 255, 0.5), -0.015px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    15% {
+        text-shadow: 0.201px 0 1px rgba(0, 30, 255, 0.5), -0.201px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    20% {
+        text-shadow: 1.740px 0 1px rgba(0, 30, 255, 0.5), -1.740px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    25% {
+        text-shadow: 0.806px 0 1px rgba(0, 30, 255, 0.5), -0.806px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    30% {
+        text-shadow: 0.350px 0 1px rgba(0, 30, 255, 0.5), -0.350px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    35% {
+        text-shadow: 1.948px 0 1px rgba(0, 30, 255, 0.5), -1.948px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    40% {
+        text-shadow: 1.935px 0 1px rgba(0, 30, 255, 0.5), -1.935px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    45% {
+        text-shadow: 1.115px 0 1px rgba(0, 30, 255, 0.5), -1.115px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    50% {
+        text-shadow: 0.040px 0 1px rgba(0, 30, 255, 0.5), -0.040px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    55% {
+        text-shadow: 1.188px 0 1px rgba(0, 30, 255, 0.5), -1.188px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    60% {
+        text-shadow: 1.101px 0 1px rgba(0, 30, 255, 0.5), -1.101px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    65% {
+        text-shadow: 1.431px 0 1px rgba(0, 30, 255, 0.5), -1.431px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    70% {
+        text-shadow: 0.244px 0 1px rgba(0, 30, 255, 0.5), -0.244px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    75% {
+        text-shadow: 0.947px 0 1px rgba(0, 30, 255, 0.5), -0.947px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    80% {
+        text-shadow: 0.042px 0 1px rgba(0, 30, 255, 0.5), -0.042px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    85% {
+        text-shadow: 0.049px 0 1px rgba(0, 30, 255, 0.5), -0.049px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    90% {
+        text-shadow: 1.722px 0 1px rgba(0, 30, 255, 0.5), -1.722px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    95% {
+        text-shadow: 1.092px 0 1px rgba(0, 30, 255, 0.5), -1.092px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+    100% {
+        text-shadow: 1.310px 0 1px rgba(0, 30, 255, 0.5), -1.310px 0 1px rgba(255, 0, 80, 0.3), 0 0 2px;
+    }
+}
+
+.crt::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06)) !important;
+    z-index: 3;
+    background-size: 100% 2px, 3px 100% !important;
+    pointer-events: none;
+}
+
+.crt {
+    animation: textShadow 1.6s infinite;
+}

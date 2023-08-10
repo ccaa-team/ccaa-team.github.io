@@ -2,6 +2,16 @@
     --primary-color-light: #3498db;
     --primary-color-dark: #2c3e50;
 }
+
+@font-face {
+    font-family: vt323;
+    src: url(./resources/VT323-Regular.ttf);
+}
+@font-face {
+    font-family: firacode;
+    src: url(./resources/FiraCode-Bold.ttf);
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -9,6 +19,8 @@ body {
     color: white;
     overflow: hidden;
     transition: background-color 0.3s, color 0.3s;
+
+    font-family: "firacode";
 }
 .container {
     position: fixed;
@@ -61,6 +73,7 @@ img.profile_logo {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
+
 .vertical-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -69,8 +82,19 @@ img.profile_logo {
     max-height: 60vh;
     overflow-y: auto;
 }
+
+.regular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+    margin-top: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
 .member {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(20, 20, 20, 1);
     padding: 10px;
     border-radius: 10px;
 }
@@ -88,6 +112,7 @@ img.profile_logo {
 .member a:hover {
     color: var(--primary-color-dark);
 }
+
 .projects {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
@@ -124,7 +149,8 @@ img.profile_logo {
 }
 .loading-text {
     color: #00c400;
-    font-size: 2rem;
+    font-size: 5rem;
+    font-family: vt323;
     position: absolute;
     top: 50%;
     left: 50%;
