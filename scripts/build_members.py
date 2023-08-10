@@ -59,5 +59,5 @@ ctx = Context({"member_cards": subhtml})
 
 rendered = template.render(ctx)
 
-with open("oindex.html","w") as f:
+with open("index.html","w") as f:
   f.write(rendered)
