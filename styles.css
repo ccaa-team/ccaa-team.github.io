@@ -158,7 +158,7 @@ body {
 }
 .loading-text {
     color: #00c400;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: vt323;
     position: absolute;
     top: 50%;
@@ -169,6 +169,7 @@ body {
 .glitch {
     animation: glitch 0.1s infinite;
 }
+
 @keyframes glitch {
     0%, 100% {
         transform: translate(0, 0);
@@ -182,4 +183,21 @@ body {
         transform: translate(2px, 2px);
         opacity: 0.6;
    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.5em;
+    animation: blink 0.5s infinite;
+    margin-left: -2rem;
+    opacity: 1;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
