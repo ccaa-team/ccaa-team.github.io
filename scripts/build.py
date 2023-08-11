@@ -70,7 +70,7 @@ for project in data:
   projecthtml += f"""<div class="project">
   <h3>{project["name"]}</h3>
   <p>By: {project["by"]}</p>
-  <a href="{project["github"]} target="_blank">GitHub</a>
+  <a href="{project["github"]}" target="_blank">GitHub</a>
 </div>
 """
 
