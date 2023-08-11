@@ -19,11 +19,18 @@ for (let i = 0; i < columns; i++) {
 let fillColor = "#0F0";
 
 function generateContrastColor(background) {
-  const lum = 0.2126 * parseInt(background.substr(1, 2), 16) +
-              0.7152 * parseInt(background.substr(3, 2), 16) +
-              0.0722 * parseInt(background.substr(5, 2), 16);
-  return lum > 128 ? "#000" : "#FFF";
+  const r = parseInt(background.substr(1, 2), 16);
+  const g = parseInt(background.substr(3, 2), 16);
+  const b = parseInt(background.substr(5, 2), 16);
+  
+  const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+
+  const contrastWhite = (luminance + 0.05) / 1.05;
+  const contrastBlack = 1.05 / (luminance + 0.05);
+
+  return contrastWhite > contrastBlack ? "#FFF" : "#000";
 }
+
 
 function draw() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
