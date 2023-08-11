@@ -33,7 +33,8 @@ with open("assets/json/members.json") as f:
 #   </div>
 #</div>
 
-contacttmpl = """<a href="{url}"><img src="assets/images/{icon}"></a>"""
+contacttmpl = """<a href="{url}"><img src="assets/images/{icon}"></a>
+"""
 
 membertmpl = """<div class="card">
   <img class="pfp" src="https://github.com/{github}.png">
