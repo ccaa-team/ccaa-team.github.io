@@ -8,7 +8,7 @@ if TYPE_CHECKING:
 
 engine = Engine()
 
-with open("index.html") as f:
+with open("index_source.html") as f:
   template = engine.from_string(f.read())
 
 with open("assets/json/members.json") as f:
