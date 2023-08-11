@@ -33,6 +33,18 @@ with open("assets/json/members.json") as f:
 #   </div>
 #</div>
 
+contacttmpl = """<a href="{url}"><img src="assets/images/{icon}"></a>"""
+
+membertmpl = """<div class="card">
+  <img class="pfp" src="https://github.com/{github}.png">
+  <h3>{name}</h3>
+  {contacts}
+  <div class="comments">
+    <p>{desc}</p>
+  </div>
+</div>
+"""
+
 memberhtml = ""
 for member in data:
   contacts = f"""<div class="contacts">
@@ -41,19 +53,9 @@ for member in data:
   </a>
   """
   for contact in member["links"]:
-    contacts += f"""<a href="{contact['url']}">
-  <img src="assets/images/{contact['icon']}">
-</a>"""
+    contacts += contacttmpl.format(url=contact["url"],icon=contact["icon"])
   contacts += "</div>"
-  memberhtml += f"""<div class="card">
-  <img class="pfp" src="https://github.com/{member['github']}.png">
-  <h3>{member['name']}</h3>
-  {contacts}
-  <div class="comments">
-    <p>{member['desc']}</p>
-  </div>
-</div>
-"""
+  memberhtml += membertmpl.format(github=member["github"],name=member["name"],contacts=contacts,desc=member["desc"])
 
 # Build projects list
 #             <div class="project">
@@ -65,14 +67,24 @@ for member in data:
 with open("assets/json/projects.json") as f:
   data = json.loads(f.read())
 
+projecttmpl = """<div class="card">
+  <img class="projicon" src="assets/images/{icon}">
+  <h3>{name}</h3>
+  <p>By: {authors}</p>
+  <div class="contacts">
+    {contacts}
+  </div>
+  <div class="comments">
+    <p>{desc}</p>
+  </div>
+</div>"""
+
 projecthtml = ""
 for project in data:
-  projecthtml += f"""<div class="card">
-  <h3>{project["name"]}</h3>
-  <p>By: {project["by"]}</p>
-  <a href="{project["github"]}" target="_blank">GitHub</a>
-</div>
-"""
+  contacts = ""
+  for link in project["links"]:
+    contacts += contacttmpl.format(url=link["url"],icon=link["icon"])
+  projecthtml += projecttmpl.format(name=project["name"],authors=project["authors"],contacts=contacts,desc=project["desc"],icon=project["icon"])
 
 ctx = Context({"member_cards": memberhtml,"projects":projecthtml})
 

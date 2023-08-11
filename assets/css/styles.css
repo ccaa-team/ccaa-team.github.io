@@ -114,6 +114,7 @@ body {
   width: 45%;
   border-radius: 20px;
 }
+
 .contacts img {
   filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(107%) contrast(100%);
   width: 48px;
@@ -204,4 +205,10 @@ body {
     50% {
         opacity: 0;
     }
+}
+
+.projicon {
+    width: 45%;
+    float: right;
+    aspect-ratio:1;
 }

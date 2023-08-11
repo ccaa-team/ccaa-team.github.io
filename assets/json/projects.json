@@ -1,4 +1,30 @@
 [
-  {"name":"Capy64 ASM","by":"VirtIO and AlexDevs","github":"https://github.com/ccaa-team/Capy64-programs/tree/main/asm"},
-  {"name":"Big Brother","by":"VirtIO","github":"https://github.com/ccaa-team/Big-Brother"}
+  {
+    "name":"Capy64 ASM",
+    "authors":"VirtIO and AlexDevs",
+    "desc":"weird thing lmao",
+    "icon":"horsie.png",
+    "links": [
+      {"icon":"github.svg","url":"https://github.com/ccaa-team/Capy64-programs/tree/main/asm"}
+    ]
+  },
+  {
+    "name":"Big Brother",
+    "authors":"VirtIO",
+    "desc":"Discord bot for our server",
+    "icon":"horsie.png",
+    "links": [
+      {"icon":"github.svg","url":"https://github.com/ccaa-team/Big-Brother"}
+    ]
+  },
+  {
+    "name": "SkyDocs",
+    "authors": "SkyCrafter0",
+    "desc": "Library with various Lua libraries for CC:Tweaked",
+    "icon": "projects/skydocs.png",
+    "links": [
+      {"icon":"github.svg","url":"https://github.com/SkyTheCodeMaster/SkyDocs"},
+      {"icon":"favicon-standard.png","url":"https://skydocs.madefor.cc"}
+    ]
+  }
 ]
