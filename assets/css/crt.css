@@ -67,7 +67,7 @@
 .crt::before {
     content: " ";
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -76,6 +76,7 @@
     z-index: 3;
     background-size: 100% 2px, 3px 100% !important;
     pointer-events: none;
+    background-attachment: fixed;
 }
 
 .crt {
