@@ -14,7 +14,7 @@
     "desc": "Certified rust addict",
     "links": [
       {"icon":"discord.svg","url":"https://discord.com/users/852877128844050432"},
-      {"icon":"favicon-standard.png","url":"https://thevirt.ru/"}
+      {"icon":"favicon-standard.svg","url":"https://thevirt.ru/"}
     ]
   },
   {
@@ -39,7 +39,7 @@
     "desc": "A better Canadian than Fatboychummy",
     "links": [
       {"icon":"discord.svg","url":"https://discord.com/users/1020094205974040698"},
-      {"icon":"favicon-standard.png","url":"https://skystuff.cc/"}
+      {"icon":"favicon-standard.svg","url":"https://skystuff.cc/"}
     ]
   },
   {
@@ -56,7 +56,7 @@
     "desc": "\"I have the sudden urge to...\"",
     "links": [
       {"icon":"discord.svg","url":"https://discord.com/users/270210946201288714"},
-      {"icon":"favicon-standard.png","url":"https://blackdrgn.nl/"}
+      {"icon":"favicon-standard.svg","url":"https://blackdrgn.nl/"}
     ]
   }
 ]
