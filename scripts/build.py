@@ -33,7 +33,7 @@ with open("assets/json/members.json") as f:
 #   </div>
 #</div>
 
-subhtml = ""
+memberhtml = ""
 for member in data:
   contacts = f"""<div class="contacts">
   <a href="https://github.com/{member['github']}">
@@ -45,7 +45,7 @@ for member in data:
   <img src="assets/images/{contact['icon']}">
 </a>"""
   contacts += "</div>"
-  subhtml += f"""<div class="member">
+  memberhtml += f"""<div class="member">
   <img class="pfp" src="https://github.com/{member['github']}.png">
   <h3>{member['name']}</h3>
   {contacts}
@@ -55,7 +55,26 @@ for member in data:
 </div>
 """
 
-ctx = Context({"member_cards": subhtml})
+# Build projects list
+#             <div class="project">
+#                <h3>Capy64 ASM</h3>
+#                <p>By: VirtIO and AlexDevs</p>
+#                <a href="https://github.com/ccaa-team/Capy64-programs/tree/main/asm" target="_blank">GitHub</a>
+#            </div>
+
+with open("assets/json/projects.json") as f:
+  data = json.loads(f.read())
+
+projecthtml = ""
+for project in data:
+  projecthtml += f"""<div class="project">
+  <h3>{project["name"]}</h3>
+  <p>By: {project["by"]}</p>
+  <a href="{project["github"]} target="_blank">GitHub</a>
+</div>
+"""
+
+ctx = Context({"member_cards": memberhtml,"projects":projecthtml})
 
 rendered = template.render(ctx)
 
