@@ -37,7 +37,7 @@ function draw() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   ctx.fillStyle = fillColor;
-  ctx.font = font_size + "px arial";
+  ctx.font = font_size + "px monospace";
 
   root.style.setProperty("--primary-color-light", fillColor);
 

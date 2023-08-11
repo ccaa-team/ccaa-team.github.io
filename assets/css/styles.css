@@ -76,7 +76,8 @@ body {
     overflow-y: auto;
 }
 
-.member {
+
+.card {
     grid-row: span 1;
     grid-column: span 1;
     background-color: rgba(20, 20, 20, 1);
@@ -88,23 +89,23 @@ body {
   text-align: center;
 }
 
-.member * {
+.card * {
   margin-top: 5px;
 }
-.member h3 {
+.card h3 {
     margin: 0;
     font-size: 1.2rem;
 }
-.member a {
+.card a {
     margin-top: 5px;
     color: var(--primary-color-light);
     text-decoration: none;
     transition: color 0.3s;
 }
-.member a:hover {
+.card a:hover {
     color: var(--primary-color-dark);
 }
-.member p {
+.card p {
   margin: 0px;
 }
 

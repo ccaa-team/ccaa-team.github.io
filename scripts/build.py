@@ -45,7 +45,7 @@ for member in data:
   <img src="assets/images/{contact['icon']}">
 </a>"""
   contacts += "</div>"
-  memberhtml += f"""<div class="member">
+  memberhtml += f"""<div class="card">
   <img class="pfp" src="https://github.com/{member['github']}.png">
   <h3>{member['name']}</h3>
   {contacts}
@@ -67,7 +67,7 @@ with open("assets/json/projects.json") as f:
 
 projecthtml = ""
 for project in data:
-  projecthtml += f"""<div class="project">
+  projecthtml += f"""<div class="card">
   <h3>{project["name"]}</h3>
   <p>By: {project["by"]}</p>
   <a href="{project["github"]}" target="_blank">GitHub</a>

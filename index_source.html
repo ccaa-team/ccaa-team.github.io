@@ -27,12 +27,12 @@
         </div>
         <!-- Members List (Vertical Table) -->
         <h2 class="title">Mem<s>b</s>ers List</h2>
-        <div class="regular-grid">
+        <div class="regular-grid" data-max-per-row="3" data-min-entry-width="300">
           {{ member_cards | safe }}
         </div>
         <!-- Projects List -->
-        <div class="projects">
-            <h2 class="title">Projects List</h2>
+        <h2 class="title">Projects List</h2>
+        <div class="regular-grid" data-max-per-row="2" data-min-entry-width="400">
             {{ projects | safe}}
         </div>
       </div>
