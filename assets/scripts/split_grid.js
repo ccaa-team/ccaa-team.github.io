@@ -19,12 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function wait_for_visibility() {
-    const observer_options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5,
-    };
-
     regular_grids.forEach(regular_grid => {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -33,13 +27,28 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.unobserve(entry.target);
           }
         });
-      }, observer_options);
+      });
 
       observer.observe(regular_grid);
     });
   }
 
   wait_for_visibility();
+
+  const mutationObserver = new MutationObserver(mutationsList => {
+    mutationsList.forEach(mutation => {
+      if (mutation.type === 'attributes' && (mutation.attributeName === 'data-min-entry-width' || mutation.attributeName === 'data-max-per-row')) {
+        const target = mutation.target.closest('.regular-grid');
+        if (target) {
+          update_grid_layout(target);
+        }
+      }
+    });
+  });
+
+  regular_grids.forEach(regular_grid => {
+    mutationObserver.observe(regular_grid, { attributes: true });
+  });
 
   window.addEventListener('resize', () => {
     regular_grids.forEach(update_grid_layout);
