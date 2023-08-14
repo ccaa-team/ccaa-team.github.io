@@ -80,12 +80,27 @@ projecttmpl = """<div class="card">
   </div>
 </div>"""
 
+projecttmpl_noicon = """<div class="card">
+  <h3>{name}</h3>
+  <p>By: {authors}</p>
+  <div class="contacts">
+    {contacts}
+  </div>
+  <div class="comments">
+    <p>{desc}</p>
+  </div>
+</div>"""
+
 projecthtml = ""
 for project in data:
   contacts = ""
   for link in project["links"]:
     contacts += contacttmpl.format(url=link["url"],icon=link["icon"])
-  projecthtml += projecttmpl.format(name=project["name"],authors=project["authors"],contacts=contacts,desc=project["desc"],icon=project["icon"])
+
+  if "icon" in project:
+    projecthtml += projecttmpl.format(name=project["name"],authors=project["authors"],contacts=contacts,desc=project["desc"],icon=project["icon"])
+  else:
+    projecthtml += projecttmpl_noicon.format(name=project["name"],authors=project["authors"],contacts=contacts,desc=project["desc"])
 
 ctx = Context({"member_cards": memberhtml,"projects":projecthtml})
 

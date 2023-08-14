@@ -3,7 +3,7 @@
     "name":"Capy64 ASM",
     "authors":"VirtIO and AlexDevs",
     "desc":"weird thing lmao",
-    "icon":"horsie.png",
+    "icon":"projects/capy64.png",
     "links": [
       {"icon":"github.svg","url":"https://github.com/ccaa-team/Capy64-programs/tree/main/asm"}
     ]
@@ -12,7 +12,7 @@
     "name":"Big Brother",
     "authors":"VirtIO",
     "desc":"Discord bot for our server",
-    "icon":"horsie.png",
+    "icon":"projects/big_brother.webp",
     "links": [
       {"icon":"github.svg","url":"https://github.com/ccaa-team/Big-Brother"}
     ]
@@ -24,7 +24,7 @@
     "icon": "projects/skydocs.png",
     "links": [
       {"icon":"github.svg","url":"https://github.com/SkyTheCodeMaster/SkyDocs"},
-      {"icon":"favicon-standard.png","url":"https://skydocs.madefor.cc"}
+      {"icon":"favicon-standard.svg","url":"https://skydocs.madefor.cc"}
     ]
   }
 ]
