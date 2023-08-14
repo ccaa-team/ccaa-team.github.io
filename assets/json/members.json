@@ -1,5 +1,14 @@
 [
   {
+    "name": "AlexDevs",
+    "github": "Ale32bit",
+    "desc": "\"I put myself above 9551 because I am superior. (if only i could make a 3D engine...)\"",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/113673208296636420"},
+      {"icon":"favicon-standard.svg","url":"https://alexdevs.me/"}
+    ]
+  },
+  {
     "name": "9551Dev",
     "github": "9551-Dev",
     "desc": "\"That improved things immensely, with the minor trade off of completely ruining everything.\"",
@@ -40,14 +49,6 @@
     "links": [
       {"icon":"discord.svg","url":"https://discord.com/users/1020094205974040698"},
       {"icon":"favicon-standard.svg","url":"https://skystuff.cc/"}
-    ]
-  },
-  {
-    "name": "AlexDevs",
-    "github": "Ale32bit",
-    "desc": "\"Hand soap dispenser fucking came on my shirt\"",
-    "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/113673208296636420"}
     ]
   },
   {
