@@ -1,5 +1,4 @@
 import json
-import random
 from typing import TYPE_CHECKING
 
 from django.template import Context, Engine
@@ -14,8 +13,6 @@ with open("index_source.html") as f:
 
 with open("assets/json/members.json") as f:
   data = json.loads(f.read())
-
-random.shuffle(data)
 
 #<div class="member">
 #   <img class="pfp" src="https://github.com/9551-Dev.png"/>
