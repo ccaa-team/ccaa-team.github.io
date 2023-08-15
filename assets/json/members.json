@@ -8,12 +8,12 @@
     ]
   },
   {
-    "name": "AlexDevs",
-    "github": "Ale32bit",
-    "desc": "\"I put myself above 9551 because I am superior. (if only i could make a 3D engine...)\"",
+    "name": "Virtio",
+    "github": "viwty",
+    "desc": "Certified rust addict",
     "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/113673208296636420"},
-      {"icon":"favicon-standard.svg","url":"https://alexdevs.me/"}
+      {"icon":"discord.svg","url":"https://discord.com/users/852877128844050432"},
+      {"icon":"favicon-standard.svg","url":"https://thevirt.ru/"}
     ]
   },
   {
@@ -26,12 +26,12 @@
     ]
   },
   {
-    "name": "Virtio",
-    "github": "viwty",
-    "desc": "Certified rust addict",
+    "name": "AlexDevs",
+    "github": "Ale32bit",
+    "desc": "I put him below up because he's clearly inferior (he can't even make a 3d engine)",
     "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/852877128844050432"},
-      {"icon":"favicon-standard.svg","url":"https://thevirt.ru/"}
+      {"icon":"discord.svg","url":"https://discord.com/users/113673208296636420"},
+      {"icon":"favicon-standard.svg","url":"https://alexdevs.me/"}
     ]
   },
   {
