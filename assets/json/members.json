@@ -1,8 +1,11 @@
 [
   {
-     "name": "Bleskalka",
+    "name": "Bleskalka",
     "github": "VRTULE1775",
-    "desc": "\"I have the right to be at the top because I'm **our mom**\""
+    "desc": "\"I have the right to be at the top because I'm **our mom**\"",
+    "links": [
+      {"icon":"discord.svg","url":"https://discord.com/users/508577166405926913"},
+    ]
   },
   {
     "name": "AlexDevs",
