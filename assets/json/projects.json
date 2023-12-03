@@ -18,13 +18,23 @@
     ]
   },
   {
-    "name": "SkyDocs",
-    "authors": "SkyCrafter0",
-    "desc": "Library with various Lua libraries for CC:Tweaked",
-    "icon": "projects/skydocs.png",
+    "name": "SkyPaste",
+    "authors": "Sky",
+    "desc": "Simple paste server",
+    "icon": "projects/sky_s.png",
     "links": [
-      {"icon":"github.svg","url":"https://github.com/SkyTheCodeMaster/SkyDocs"},
-      {"icon":"favicon-standard.svg","url":"https://skydocs.madefor.cc"}
+      {"icon":"github.svg","url":"https://github.com/SkyTheCodeMaster/paste"},
+      {"icon":"favicon-standard.svg","url":"https://paste.skystuff.cc"}
+    ]
+  },
+  {
+    "name": "UPC API",
+    "authors": "Sky",
+    "desc": "Open source UPC database",
+    "icon": "projects/u.png",
+    "links": [
+      {"icon":"github.svg","url":"https://github.com/SkyTheCodeMaster/upc-api"},
+      {"icon":"favicon-standard.svg","url":"https://upc.skystuff.cc"}
     ]
   }
 ]
