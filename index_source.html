@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta content="CCAA Team" property="og:title" />
+  <meta content="The ones feared." property="og:description" />
+  <meta content="http://ccaa.info" property="og:url" />
+  <meta content="https://github.com/ccaa-team.png" property="og:image" />
+  <meta content="#ff0000" data-react-helmet="true" name="theme-color" />
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/crt.css">
+
+  <title>CCAA</title>
+</head>
+
+<body>
+  <!-- <div class="crt">e -->
+  <div class="crt">
+    <canvas id="matrix-rain"></canvas>
+    <div class="container">
+      <div class="content">
+        <h1>> CCAA Team<span id="cursor">_</span></h1>
+        <p></p>
+        <div class="grid">
+          <button id="colorToggle" class="btn">[REDACTED]</button>
+          <button id="toggleCrt" class="btn">Toggle Crt Effect</button>
+          <button class="btn" onclick="redirectToSubdomain('i')">CCAA booru</button>
+          <button class="btn" onclick="redirectTo('https://github.com/ccaa-team/')">GitHub</button>
+        </div>
+        <!-- Members List (Vertical Table) -->
+        <h2 class="title">Mem<s>b</s>ers List</h2>
+        <div class="regular-grid" data-max-per-row="3" data-min-entry-width="300">
+          {{ member_cards | safe }}
+        </div>
+        <!-- Projects List -->
+        <h2 class="title">Projects List</h2>
+        <div class="regular-grid" data-max-per-row="2" data-min-entry-width="400">
+            {{ projects | safe}}
+        </div>
+      </div>
+    </div>
+    <div class="loading-text">
+      <span class="glitch" id="desc">Loading...</span>
+      <span class="cursor blink" id="load-cursor">_</span>
+    </div>
+  </div>
+  <!-- </div> -->
+  </div>
+</body>
+
+<script src="assets/scripts/color_change.js"></script>
+<script src="assets/scripts/loading_text.js"></script>
+<script src="assets/scripts/matrix.js"></script>
+<script src="assets/scripts/redirect.js"></script>
+<script src="assets/scripts/cursor_blink.js"></script>
+<script src="assets/scripts/split_grid.js"></script>
+<script src="assets/scripts/crt_toggle.js"></script>
+
+</html>
