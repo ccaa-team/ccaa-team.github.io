@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Bleskalka",
+    "github": "VRTULE1775",
+    "desc": "\"I have the right to be at the top because I'm <b>our mom</b>\"",
+    "links": []
+  },
+  {
+    "name": "virtue",
+    "github": "viw-ty",
+    "desc": "",
+    "links": []
+  },
+  {
+    "name": "9551Dev",
+    "github": "9551-Dev",
+    "desc": "\"That improved things immensely, with the minor trade off of completely ruining everything. (Meow :3)\"",
+    "links": [
+      {"icon":"horsie.png","url":"https://devvie.cc/estrogen_extraction/"}
+    ]
+  },
+  {
+    "name": "AlexDevs",
+    "github": "Ale32bit",
+    "desc": "I put him below us because he's clearly inferior (he can't even make a 3d engine)",
+    "links": [
+      {"icon":"favicon-standard.svg","url":"https://alexdevs.me/"}
+    ]
+  },
+  {
+    "name": "Fatboychummy",
+    "github": "fatboychummy",
+    "desc": "I am Canadian, eh!",
+    "links": []
+  },
+  {
+    "name": "Jonmjauu",
+    "github": "jonmjauu",
+    "desc": "\"The Code of Chaos\" - Mr. Robot",
+    "links": []
+  },
+  {
+    "name": "BlackDragon",
+    "github": false,
+    "codeberg": "BlackDragon",
+    "desc": "I like trains",
+    "links": [
+      {"icon":"codeberg.svg","url":"https://codeberg.org/BlackDragon"},
+      {"icon":"favicon-standard.svg","url":"https://blackdrgn.nl/"}
+    ]
+  },
+  {
+    "name": "Sky",
+    "github": "SkyTheCodeMaster",
+    "desc": "A better Canadian than Fatboychummy",
+    "links": [
+      {"icon":"favicon-standard.svg","url":"https://skystuff.cc/"}
+    ]
+  }
+]

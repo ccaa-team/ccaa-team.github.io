@@ -1,0 +1,214 @@
+:root {
+    --primary-color-light: #0F0;
+    --primary-color-dark: #1C1C1C;
+}
+
+@font-face {
+    font-family: vt323;
+    src: url(/assets/fonts/VT323-Regular.ttf);
+}
+@font-face {
+    font-family: firacode;
+    src: url(/assets/fonts/FiraCode-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+
+    font-family: "firacode";
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s;
+    overflow-y: auto;
+    max-height: 90vh;
+    padding-top: 10vh;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    display: none;
+}
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 20px 40px;
+    background-color: var(--primary-color-light);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-shadow: -1px 1px 2px black;
+}
+.btn:hover {
+    background-color: var(--primary-color-dark);
+    transform: scale(1.05);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.regular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+
+.card {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: rgba(20, 20, 20, 1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.card * {
+  margin-top: 5px;
+}
+.card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.card a {
+    margin-top: 5px;
+    color: var(--primary-color-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.card a:hover {
+    color: var(--primary-color-dark);
+}
+.card p {
+  margin: 0px;
+}
+
+.pfp {
+  float: right;
+  width: 45%;
+  border-radius: 20px;
+}
+
+.contacts img {
+  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(107%) contrast(100%);
+  width: 48px;
+  height: 48px;
+}
+.comments {
+  display: block;
+  padding-right: 45%;
+  margin: 10px
+}
+
+.projects {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.projects p,.projects a {
+    margin-left: 15px;
+}
+.projects h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.project {
+    margin-top: 10px;
+    text-align: center;
+}
+.project a {
+    color: var(--primary-color-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.project a:hover {
+    color: var(--primary-color-dark);
+}
+#matrix-rain {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.loading-text {
+    color: #00c400;
+    font-size: 6rem;
+    font-family: vt323;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.glitch {
+    animation: glitch 0.1s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 1;
+   }
+    25%, 50%, 75% {
+        transform: translate(-2px, -2px);
+        opacity: 0.8;
+   }
+    20%, 40%, 60%, 80% {
+        transform: translate(2px, 2px);
+        opacity: 0.6;
+   }
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.5em;
+    animation: blink 0.5s infinite;
+    margin-left: -2rem;
+    opacity: 1;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.projicon {
+    width: 45%;
+    float: right;
+    aspect-ratio:1;
+}
