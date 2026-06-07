@@ -9,15 +9,6 @@
     ]
   },
   {
-    "name":"Big Brother",
-    "authors":"VirtIO",
-    "desc":"Discord bot for our server",
-    "icon":"projects/big_brother.png",
-    "links": [
-      {"icon":"github.svg","url":"https://github.com/ccaa-team/Big-Brother"}
-    ]
-  },
-  {
     "name": "SkyPaste",
     "authors": "Sky",
     "desc": "Simple paste server",

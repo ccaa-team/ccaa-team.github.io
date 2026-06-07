@@ -6,7 +6,19 @@ function random(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
+let drawStarted = false;
+
+function startDraw() {
+    if (drawStarted) return;
+    drawStarted = true;
+    for (let i = 0; i < 100; i++) {
+        draw()        
+    }
+    setInterval(draw, 35);
+}
+
 function typeWriter(i = random(0, texts.length), index = 0) {
+    startDraw();
     if (index <= texts[i].length) {
         loadingText.textContent = "> " + texts[i].substr(0, index);
         loadingCursor.style.display = 'inline';
@@ -25,7 +37,6 @@ function typeWriter(i = random(0, texts.length), index = 0) {
                 document.querySelector('.container').style.opacity = 1;
                 document.querySelector('.content').style.display = "block";
                 canvas.style.display = "block";
-                setInterval(draw, 35);
             }, 200);
         }, 200);
     }

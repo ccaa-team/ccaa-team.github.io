@@ -36,27 +36,33 @@ with open("assets/json/members.json") as f:
 contacttmpl = """<a href="{url}"><img src="assets/images/{icon}"></a>
 """
 
-membertmpl = """<div class="card">
-  <img class="pfp" src="https://github.com/{github}.png">
-  <h3>{name}</h3>
-  {contacts}
-  <div class="comments">
-    <p>{desc}</p>
-  </div>
-</div>
-"""
-
 memberhtml = ""
 for member in data:
-  contacts = f"""<div class="contacts">
-  <a href="https://github.com/{member['github']}">
-    <img src="assets/images/github.svg">
-  </a>
+    avatar = f"https://github.com/{member['github']}.png" if member.get('github') else f"https://codeberg.org/{member['codeberg']}.png"
+
+    membertmpl = """<div class="card">
+    <img class="pfp" src="{avatar}">
+    <h3>{name}</h3>
+    {contacts}
+    <div class="comments">
+      <p>{desc}</p>
+    </div>
+  </div>
   """
-  for contact in member["links"]:
-    contacts += contacttmpl.format(url=contact["url"],icon=contact["icon"])
-  contacts += "</div>"
-  memberhtml += membertmpl.format(github=member["github"],name=member["name"],contacts=contacts,desc=member["desc"])
+
+    contacts = '<div class="contacts">'
+    
+    # Only add GitHub link if github value exists and is truthy
+    if member.get('github'):
+        contacts += f"""<a href="https://github.com/{member['github']}">
+    <img src="assets/images/github.svg">
+  </a>"""
+    
+    for contact in member["links"]:
+        contacts += contacttmpl.format(url=contact["url"], icon=contact["icon"])
+    contacts += "</div>"
+    
+    memberhtml += membertmpl.format(avatar=avatar, name=member["name"], contacts=contacts, desc=member["desc"])
 
 # Build projects list
 #             <div class="project">
