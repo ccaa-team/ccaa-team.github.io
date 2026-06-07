@@ -3,9 +3,7 @@
     "name": "Bleskalka",
     "github": "VRTULE1775",
     "desc": "\"I have the right to be at the top because I'm <b>our mom</b>\"",
-    "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/508577166405926913"}
-    ]
+    "links": []
   },
   {
     "name": "virtue",
@@ -18,7 +16,6 @@
     "github": "9551-Dev",
     "desc": "\"That improved things immensely, with the minor trade off of completely ruining everything. (Meow :3)\"",
     "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/508577166405926913"},
       {"icon":"horsie.png","url":"https://devvie.cc/estrogen_extraction/"}
     ]
   },
@@ -27,7 +24,6 @@
     "github": "Ale32bit",
     "desc": "I put him below us because he's clearly inferior (he can't even make a 3d engine)",
     "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/113673208296636420"},
       {"icon":"favicon-standard.svg","url":"https://alexdevs.me/"}
     ]
   },
@@ -35,17 +31,13 @@
     "name": "Fatboychummy",
     "github": "fatboychummy",
     "desc": "I am Canadian, eh!",
-    "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/236628809158230018"}
-    ]
+    "links": []
   },
   {
     "name": "Jonmjauu",
     "github": "jonmjauu",
     "desc": "\"The Code of Chaos\" - Mr. Robot",
-    "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/495506911257427979"}
-    ]
+    "links": []
   },
   {
     "name": "BlackDragon",
@@ -62,7 +54,6 @@
     "github": "SkyTheCodeMaster",
     "desc": "A better Canadian than Fatboychummy",
     "links": [
-      {"icon":"discord.svg","url":"https://discord.com/users/1020094205974040698"},
       {"icon":"favicon-standard.svg","url":"https://skystuff.cc/"}
     ]
   }
